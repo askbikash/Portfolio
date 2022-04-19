@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Glassmorphism Skills Bar</title>
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!--Stylesheet-->
+    <style media="screen">
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url('bg.webp');
+        }
+
+        .wrapper {
+            width: 40%;
+            min-width: 570px;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            left: 50%;
+            top: 50%;
+            margin: 80px 0;
+        }
+
+        .container {
+            width: 100%;
+            padding: 38px 56px 81px;
+            background-color: white;
+            border: 2px solid rgba(0, 0, 0, 0.06);
+            border-radius: 80px;
+            box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(16px);
+        }
+
+        .container * {
+            font-family: "Poppins", sans-serif;
+            color: black;
+            font-weight: 500;
+        }
+
+        h2 {
+            margin-bottom: 50px;
+            letter-spacing: 2px;
+            text-align: center;
+            font-size: 33px;
+            font-weight: bold;
+        }
+
+        .skills:not(:last-child) {
+            margin-bottom: 30px;
+        }
+
+        .details {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .bar {
+            position: relative;
+
+            border: 2px solid #0d96e0;
+
+            border-radius: 20px;
+
+        }
+
+        .bar div {
+            position: relative;
+            width: 0;
+            height: 9px;
+            border-radius: 10px;
+            background-color: #0d96e0;
+
+
+        }
+
+        #html-bar {
+            animation: html-fill 2s forwards;
+        }
+
+        @keyframes html-fill {
+            100% {
+                width: 80%;
+            }
+        }
+
+        #css-bar {
+            animation: css-fill 2s forwards;
+        }
+
+        @keyframes css-fill {
+            100% {
+                width: 65%;
+            }
+        }
+
+        #js-bar {
+            animation: js-fill 2s forwards;
+        }
+
+        @keyframes js-fill {
+            100% {
+                width: 12%;
+            }
+        }
+
+        #c-bar {
+            animation: c-fill 2s forwards;
+        }
+
+        @keyframes c-fill {
+            100% {
+                width: 78%;
+            }
+        }
+
+        #dsa-bar {
+            animation: dsa-fill 2s forwards;
+        }
+
+        @keyframes dsa-fill {
+            100% {
+                width: 18%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hero">
+        <nav>
+            <img src="./img/nodp.png" class="logo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+            <a href="contact.html" class="btn">CONTACT</a>
+        </nav>
+
+        <div class="wrapper">
+            <div class="shape-1"></div>
+            <div class="shape-2"></div>
+            <div class="container">
+                <h2>My Skills </h2>
+                <div class="skills">
+                    <div class="details">
+                        <span>HTML</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="bar">
+                        <div id="html-bar"></div>
+                    </div>
+                </div>
+                <div class="skills">
+                    <div class="details">
+                        <span>CSS</span>
+                        <span>65%</span>
+                    </div>
+                    <div class="bar">
+                        <div id="css-bar"></div>
+                    </div>
+                </div>
+                <div class="skills">
+                    <div class="details">
+                        <span>Javascript</span>
+                        <span>12%</span>
+                    </div>
+                    <div class="bar">
+                        <div id="js-bar"></div>
+                    </div>
+                </div>
+                <div class="skills">
+                    <div class="details">
+                        <span>C</span>
+                        <span>78%</span>
+                    </div>
+                    <div class="bar">
+                        <div id="c-bar"></div>
+                    </div>
+                </div>
+                <div class="skills">
+                    <div class="details">
+                        <span>Data Structures and Algorithm</span>
+                        <span>18%</span>
+                    </div>
+                    <div class="bar">
+                        <div id="dsa-bar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="content-footer-skills">
+            <p>All right reserved copyright &copy; Bikash.com</p>
+            <ul class="social">
+                <li><a class="css-is-deranged" href="_INSERT_GITHUB_URL_HERE_">GitHub</a></li>
+                <li><a class="css-is-deranged" href="_INSERT_TWITTER_URL_HERE_">Linkdin</a></li>
+                <li><a class="css-is-deranged" href="_INSERT_GOOGLE+_URL_HERE_">Instagram</a></li>
+            </ul>
+        </footer>
+</body>
+
+</html>
